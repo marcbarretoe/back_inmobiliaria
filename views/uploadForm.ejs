@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Upload form</title>
+</head>
+<body>
+  <h1>Formulario de Marcas</h1>
+  <div class="bd-example">
+  <form name="upload-form" action="upload" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="new-tipo">Tipo:</label>
+        <input name="tipo" id="new-tipo" type="text" class="form-control" placeholder="Escriba el nombre de la marca">
+        <label for="new-ciudad">Ciudad:</label>
+        <input name="ciudad" id="new-ciudad" type="text" class="form-control" placeholder="Escriba el nombre de la marca">
+        <label for="new-marca">Nombre Marca:</label>
+        <input name="marca" id="new-marca" type="text" class="form-control" placeholder="Escriba el nombre de la marca">
+        <label for="new-descripcion">Descripcion:</label>
+        <input name="descripcion" id="new-descripcion" type="text" class="form-control" placeholder="Escriba una descripción">
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="new-precio">Precio:</label>
+            <input name="precio" id="new-precio" type="text" class="form-control" placeholder="Escriba el precio">
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="new-contacto">Contacto:</label>
+            <input name="contacto" id="new-contacto" type="text" class="form-control" placeholder="Escriba un número de contacto">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="new-latitud">Latitud:</label>
+            <input name="latitud" id="new-latitud" type="text" class="form-control" placeholder="Escriba el valor de latitud">
+        </div> 
+
+        <div class="col-md-6 mb-3">
+            <label for="new-longitud">Longitud:</label>
+            <input name="longitud" id="new-longitud" type="text" class="form-control" placeholder="Escriba el valor de longitud">
+        </div> 
+    </div> 
+    <label for="new-image">Cargar galería de la marca</label>
+    <input type="file" name="attachment" class="form-control-file" id="attachment">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    
+  </form>
+  </div>
+  <br/>
+  <br/>
+  <a href="/" class="previous">Ir atrás</a>
+</body>
+</html>
